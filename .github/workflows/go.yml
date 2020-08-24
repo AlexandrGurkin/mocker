@@ -1,9 +1,9 @@
 name: Go
 
 on:
-  tags:
-    - v*
   push:
+    tags:
+      - v*
     branches: [ master ]
   pull_request:
     branches: [ master ]
