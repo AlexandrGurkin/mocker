@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/AlexandrGurkin/mocker/internal/controllers"
 	"log"
 	"net/http"
+
+	"github.com/AlexandrGurkin/mocker/internal/controllers"
 )
 
 func main() {
