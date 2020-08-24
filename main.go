@@ -8,9 +8,9 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", controllers.HomeRouterHandler) // установим роутер
-	err := http.ListenAndServe(":9000", nil)            // задаем слушать порт
+	http.HandleFunc("/", controllers.HomeRouterHandler)
 
+	err := http.ListenAndServe(":9000", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}

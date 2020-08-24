@@ -1,4 +1,4 @@
-//Internal package with handlers.
+// Package controllers is internal package with handlers.
 package controllers
 
 import (
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-//HomeRouterHandler is handler for printing incoming request.
+// HomeRouterHandler is handler for printing incoming request.
 func HomeRouterHandler(w http.ResponseWriter, r *http.Request) {
 	_ = r.ParseForm()
 	fmt.Println(r.Form)
