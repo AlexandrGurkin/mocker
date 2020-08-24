@@ -31,7 +31,7 @@ help: ## Display this help screen
 	@grep -h -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 build: prepare ## Build app
-	@go build -mod=vendor -o $(GO_BIN) $(APP)
+	@go build -o $(GO_BIN) $(APP)
 
 prepare: #swagger ##protogen ## Prepare for build
 

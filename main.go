@@ -8,7 +8,7 @@ import (
 )
 
 func HomeRouterHandler(w http.ResponseWriter, r *http.Request) {
-	r.ParseForm()       //анализ аргументов,
+	_ = r.ParseForm()   //анализ аргументов,
 	fmt.Println(r.Form) // ввод информации о форме на стороне сервера
 	fmt.Println("path", r.URL.Path)
 	fmt.Println("scheme", r.URL.Scheme)
