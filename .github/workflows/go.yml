@@ -37,6 +37,11 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
   
     - name: Upload math result for job 1
       uses: actions/upload-artifact@v2
